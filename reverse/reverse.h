@@ -26,4 +26,20 @@ static inline void reverse_array(int *arr, int n){
   }
 
 }
+
+
+static inline int reverse_int(int num){
+  int rev = 0;
+  int sign =(num<0) ? -1:1;
+  num = num*sign;
+
+  while (num>0) {
+    int digit = num%10;
+    rev = rev*10 + digit;
+    num/=10;
+  }
+
+  return sign*rev;
+  
+}
 #endif // !REVERSE
