@@ -1,0 +1,15 @@
+### is_prime()
+-  0,1, and negative are not prime, and even as well beside two
+- now checking all the odd divisor using the loop conditions to the n but here the n will be i*i on comparision so that it will have half of the square complexity insted of O(n) and make process a lot fast:
+[any number can be written as product of two number like 32 = 2*16, if any number would be bigger than root of n then the overall a*b will be bigger than n, so we can only check the a, b which are lesser than root{n}]
+[so checking every number from point to the root of that number would make more sense for the quality]
+- then it will return the boolean check as per the conditions
+
+### get_factorial()
+- takes a integer parameter
+- creates a fact storer
+- starts a looping condition from that number  and conditions upto the 0 not equal to 0 tho and decrements it 
+- at each decrement we multiply the fact storer with itself to the decremented value until condition
+- returns the overall stored fact value as a factorial after condition ends
+
+
