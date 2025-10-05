@@ -12,4 +12,9 @@
 - at each decrement we multiply the fact storer with itself to the decremented value until condition
 - returns the overall stored fact value as a factorial after condition ends
 
-
+### is_armstrong()
+- takes number parameter
+- calculates the digit amount of that number
+- to sum the overall it will like strips each last digit and then uses that digits counts to multiply them and sums them overall 
+- and returns the true if the overall sum matches the original
+- `for example: 153 = 1*1*1 + 5*5*5 + 3*3*3 == 153`

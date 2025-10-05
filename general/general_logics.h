@@ -22,4 +22,35 @@ static inline int get_factorial(int n){
   return  fact;
 }
 
+static inline bool is_armstrong(int n){
+  if (n<0) return false;
+
+  int original  = n;
+  int digits = 0;
+  int temp = n;
+
+  while (temp!=0){
+    digits++;
+    temp/=10; //cutting of the tenth term each until 0
+  }
+
+  int sum = 0;
+  temp = n;
+  
+  while (temp!=0) {
+    int digit = temp%10;
+
+    int power = 1;
+    
+    for(int i=0; i<digits; i++){
+      power*=digit;
+    }
+    
+    sum+=power;
+    temp/=10;
+  
+  }
+  return sum==original;
+}
+
 #endif // !GENERAL_LOGICS
