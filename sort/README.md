@@ -5,3 +5,5 @@
 - innter loop goes from 0 to the n-i-1 compares the adjacent element of array j and j+1 
 - if current one is larger than next, then  swapped
 
+### sort_arrayint_desc()
+- does same as sort_arrayint_asc() for opposite
