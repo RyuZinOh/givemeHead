@@ -7,3 +7,9 @@
 
 ### sort_arrayint_desc()
 - does same as sort_arrayint_asc() for opposite
+
+### sort_string_asc()
+- does same as the array asc, but takes string
+
+### sort_string_desc()
+- does same as the  string asc, but opposite
