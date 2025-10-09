@@ -13,3 +13,16 @@
 
 ### sort_string_desc()
 - does same as the  string asc, but opposite
+
+
+### words_in_array_asc();
+- [uses quick sorting method->moves all elements smaller than pivot to left and larger to right where pivot is center, recursively sorts left and then right]
+- takes array and its we know left will be starting of as 0 and right will be of n-1 
+- picks a pivot generally left+right/2, in c we can't generally assign but we can use the string methods for that
+- now we create a loop until i,j crosses each other
+- moving i forward and j backward
+- when i finds element larger than its elements then we do swaping
+- sorts all elements after the pivot (indices i to right) recursively and vice versa
+`if(left < j) words_in_array_asc(words, left, j);
+if(i < right) words_in_array_asc(words, i, right);`
+
