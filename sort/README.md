@@ -26,3 +26,5 @@
 `if(left < j) words_in_array_asc(words, left, j);
 if(i < right) words_in_array_asc(words, i, right);`
 
+### words_in_array_desc();
+- does same as the words_in_array_asc but opposite while decrementing and incrmenting towards pivot

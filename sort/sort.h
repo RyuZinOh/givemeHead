@@ -103,4 +103,39 @@ static inline void words_in_array_asc(char w[][20], int left, int right){
     
 }
 
+static inline void words_in_array_desc(char w[][20], int left, int right){
+  if (left >=right) return;
+  int i = left;
+  int j = right;
+
+  char pivot[20];
+  strcpy(pivot, w[(left+right)/2]);
+  char temp[20];
+
+  while (i<=j) {
+    while (strcmp(w[i], pivot)>0) {
+      i++;
+    }
+    while (strcmp(w[j], pivot)<0) {
+      j--;
+    }
+
+    if(i<=j){
+      strcpy(temp, w[i]);
+      strcpy(w[i], w[j]);
+      strcpy(w[j], temp);
+      i++;
+      j--;
+    }
+  }
+  if (left<j) {
+    words_in_array_desc(w,left, j);
+  }
+  if (right>i){
+    words_in_array_desc(w, i, right);
+
+  }
+    
+}
+
 #endif // !SORT
