@@ -18,3 +18,11 @@
 - to sum the overall it will like strips each last digit and then uses that digits counts to multiply them and sums them overall 
 - and returns the true if the overall sum matches the original
 - `for example: 153 = 1*1*1 + 5*5*5 + 3*3*3 == 153`
+
+
+### get_fibonacci_upto_that_n()
+- we know fibonacci series is next is always equals to sum or previous two terms
+- to genereate series we evaluate the number until the condition with while loop
+- in each step we calculate the next number  = previous plus  current
+- and then we have to shift the previous and current value, i.e: the current -> previous && next -> current 
+- and then we pring the current and repeat the process till the condition
