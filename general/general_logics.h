@@ -71,4 +71,27 @@ static inline void get_fibonacci_upto_that_n(int n) {
   printf("\n");
 }
 
+static inline bool is_palindrome(int n) {
+  int original = n;
+  int reverse = 0;
+  int digit;
+
+  /*
+    123
+    -> 12.3 = 12
+    -> 0*12 + 12
+    -> 123/ 10 => 12  for next intereation
+   */
+  while (n != 0) {
+    digit = n % 10;
+    reverse = reverse * 10 + digit;
+    n = n / 10;
+  }
+  if (original == reverse) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 #endif // !GENERAL_LOGICS

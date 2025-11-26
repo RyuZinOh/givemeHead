@@ -26,3 +26,9 @@
 - in each step we calculate the next number  = previous plus  current
 - and then we have to shift the previous and current value, i.e: the current -> previous && next -> current 
 - and then we pring the current and repeat the process till the condition
+
+
+### is_palindrome()
+- takes the input number 
+- after taking the input number it assigns the static original value so that it wont change so that we can compare and we initialize the reverse at 0 and digit 
+- now we run the condition until the input number isnt a 0 it will run a iteration to strip down the value to every tens term to revoke the integer from opposite end and then it will add that thing in revrse order and then the number always gets its last value removed at the last iteration and this continues until the conditions are available 
