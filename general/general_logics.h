@@ -94,4 +94,32 @@ static inline bool is_palindrome(int n) {
   }
 }
 
+/* counter */
+static int count_the_integer_amount_in_integer(int n) {
+  if (n == 0) {
+    return 1;
+  }
+  int count = 0;
+  while (n) {
+    n = n / 10;
+    count++;
+  }
+  return count;
+}
+
+/*
+ *
+ * 5000
+ */
+static int splitt(int n) {
+  int sum = 0;
+  while (n > 0) {
+    sum = sum + n % 10;
+    n = n / 10;
+  }
+  if (count_the_integer_amount_in_integer(sum) > 1) {
+    return splitt(sum);
+  }
+  return sum;
+}
 #endif // !GENERAL_LOGICS

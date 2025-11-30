@@ -32,3 +32,9 @@
 - takes the input number 
 - after taking the input number it assigns the static original value so that it wont change so that we can compare and we initialize the reverse at 0 and digit 
 - now we run the condition until the input number isnt a 0 it will run a iteration to strip down the value to every tens term to revoke the integer from opposite end and then it will add that thing in revrse order and then the number always gets its last value removed at the last iteration and this continues until the conditions are available 
+
+### splitt()
+- it takes input number
+- initializes sum as 0
+- after tht we sum it to to itself with its modulas to get a sum of every number in a number 
+- the above steps will only act as once but we need to implement it until our number count is 1 so we add a condition to check the count and if the count is greater than one we reiterate it but now we pass the sum and process continues  till we get a valid sum
